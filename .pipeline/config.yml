@@ -11,16 +11,16 @@ stages:
   Acceptance:
     cloudFoundryDeploy: false
     cfApiEndpoint: "https://api.cf.us10.hana.ondemand.com"
-    cfOrg: "org"
-    cfSpace: "space"
+    cfOrg: "RM1"
+    cfSpace: "dev"
     cfAppName: "app4RM"
     cfCredentialsId: "deploy-to-cf"
     uiVeri5ExecuteTests: false
   Release:
     cloudFoundryDeploy: true
     cfApiEndpoint: "https://api.cf.us10.hana.ondemand.com"
-    cfOrg: "org"
-    cfSpace: "space"
+    cfOrg: "RM1"
+    cfSpace: "dev"
     cfAppName: "app4RM"
     cfCredentialsId: "deploy-to-cf"
     tmsUpload: false
