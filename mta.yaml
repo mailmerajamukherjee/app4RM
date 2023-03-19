@@ -80,9 +80,23 @@ modules:
       - RiskManagementriskmanagement.zip
       name: RiskManagementriskmanagement
       target-path: resources/
+    - artifacts:
+      - riskmanagement1riskmanagement1.zip
+      name: riskmanagement1riskmanagement1
+      target-path: resources/
 - name: RiskManagementriskmanagement
   type: html5
   path: app/riskmanagement
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: riskmanagement1riskmanagement1
+  type: html5
+  path: app/riskmanagement1
   build-parameters:
     build-result: dist
     builder: custom
